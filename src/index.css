@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.jumbo-img{
+  background: no-repeat fixed;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.home-rooms {
+  text-align: center;
+}
+
+.cardDeck-body {
+  margin: 10px !important; 
+}
+
+.my-footer{
+  background-color: #2E2E2E !important;
+  color: white;
+}
