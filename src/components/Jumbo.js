@@ -1,10 +1,9 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
-import vegasHome from '../images/vegasHome.jpg';
-
 
 export default function Jumbo() {
+  const vegasHome = "images/vegasHome.jpg"
     return (
         <Jumbotron className="jumbo-img" style={{ backgroundImage: `url(${vegasHome})`}}>
           
