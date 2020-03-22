@@ -1,16 +1,138 @@
+
 const roomsData = [
     {
-        "id": 1,
-        "images": [
-            "/images/twoQueens.jpg",
-            "/images/twoQueens-2.jpg",
-            "/images/twoQueens-3.jpg"
+      id: 1,
+      images: [
+        "/images/twoQueens.jpg",
+        "/images/twoQueens-2.jpg",
+        "/images/twoQueens-3.jpg"
+      ],
+      title: "TERRACE STUDIO TWO QUEEN BEDS FOUNTAIN VIEW",
+      subTitle: "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE",
+      buttom: "BOOK IT",
+      text: [
+        "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE.",
+        "TERRACE STUDIO TWO QUEEN BEDS FEATURES.",
+        "The Two Queen Beds Terrace Studio features warm, welcoming touches and a luxurious bathroom with an exquisite marble floor. Glass doors open onto an expansive private terrace with unparalleled views of The Strip and surrounding areas – a feature not typically found in a luxury Vegas hotel room - to make this one of the best beds in Las Vegas.",
+        "Comfortable, open living space",
+        "Large, luxurious bathroom, 620 sq. ft. studio, 110 sq. ft.",
+        "private terrace",
+        "2 queen-size beds",
+        "Room features pictured may vary based on availability."
+      ],
+      mapImage: "/images/twoQueens-map.jpg"
+    },
+    {
+        id: 2,
+        images: [
+          "/images/Terrace-1-bed-bedroom.jpg",
+          "/images/Terrace-1-bedroom-bath.jpg",
+          "/images/terrace-one-bedroom-living.jpg"
         ],
-        "title": "TERRACE STUDIO TWO QUEEN BEDS FOUNTAIN VIEW",
-        "subTitle": "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE",
-        "buttom": "BOOK IT"
+        title: "TERRACE ONE BEDROOM",
+        subTitle: "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE",
+        buttom: "BOOK IT",
+              text: [
+        "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE.",
+        "TERRACE STUDIO TWO QUEEN BEDS FEATURES.",
+        "The Two Queen Beds Terrace Studio features warm, welcoming touches and a luxurious bathroom with an exquisite marble floor. Glass doors open onto an expansive private terrace with unparalleled views of The Strip and surrounding areas – a feature not typically found in a luxury Vegas hotel room - to make this one of the best beds in Las Vegas.",
+        "Comfortable, open living space",
+        "Large, luxurious bathroom, 620 sq. ft. studio, 110 sq. ft.",
+        "private terrace",
+        "2 queen-size beds",
+        "Room features pictured may vary based on availability."
+      ],
+      mapImage: "/images/twoQueens-map.jpg"
+    },
+    {
+      id: 3,
+      images: [
+        "/images/twoQueens.jpg",
+        "/images/twoQueens-2.jpg",
+        "/images/twoQueens-3.jpg"
+      ],
+      title: "TERRACE STUDIO TWO QUEEN BEDS FOUNTAIN VIEW",
+      subTitle: "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE",
+      buttom: "BOOK IT",
+            text: [
+        "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE.",
+        "TERRACE STUDIO TWO QUEEN BEDS FEATURES.",
+        "The Two Queen Beds Terrace Studio features warm, welcoming touches and a luxurious bathroom with an exquisite marble floor. Glass doors open onto an expansive private terrace with unparalleled views of The Strip and surrounding areas – a feature not typically found in a luxury Vegas hotel room - to make this one of the best beds in Las Vegas.",
+        "Comfortable, open living space",
+        "Large, luxurious bathroom, 620 sq. ft. studio, 110 sq. ft.",
+        "private terrace",
+        "2 queen-size beds",
+        "Room features pictured may vary based on availability."
+      ],
+      mapImage: "/images/twoQueens-map.jpg"
+    },
+    {
+        id: 4,
+        images: [
+          "/images/Terrace-1-bed-bedroom.jpg",
+          "/images/Terrace-1-bedroom-bath.jpg",
+          "/images/terrace-one-bedroom-living.jpg"
+        ],
+        title: "TERRACE ONE BEDROOM",
+        subTitle: "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE",
+        buttom: "BOOK IT",
+              text: [
+        "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE.",
+        "TERRACE STUDIO TWO QUEEN BEDS FEATURES.",
+        "The Two Queen Beds Terrace Studio features warm, welcoming touches and a luxurious bathroom with an exquisite marble floor. Glass doors open onto an expansive private terrace with unparalleled views of The Strip and surrounding areas – a feature not typically found in a luxury Vegas hotel room - to make this one of the best beds in Las Vegas.",
+        "Comfortable, open living space",
+        "Large, luxurious bathroom, 620 sq. ft. studio, 110 sq. ft.",
+        "private terrace",
+        "2 queen-size beds",
+        "Room features pictured may vary based on availability."
+      ],
+      mapImage: "/images/twoQueens-map.jpg"
+    },
+    {
+      id: 5,
+      images: [
+        "/images/twoQueens.jpg",
+        "/images/twoQueens-2.jpg",
+        "/images/twoQueens-3.jpg"
+      ],
+      title: "TERRACE STUDIO TWO QUEEN BEDS FOUNTAIN VIEW",
+      subTitle: "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE",
+      buttom: "BOOK IT",
+            text: [
+        "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE.",
+        "TERRACE STUDIO TWO QUEEN BEDS FEATURES.",
+        "The Two Queen Beds Terrace Studio features warm, welcoming touches and a luxurious bathroom with an exquisite marble floor. Glass doors open onto an expansive private terrace with unparalleled views of The Strip and surrounding areas – a feature not typically found in a luxury Vegas hotel room - to make this one of the best beds in Las Vegas.",
+        "Comfortable, open living space",
+        "Large, luxurious bathroom, 620 sq. ft. studio, 110 sq. ft.",
+        "private terrace",
+        "2 queen-size beds",
+        "Room features pictured may vary based on availability."
+      ],
+      mapImage: "/images/twoQueens-map.jpg"
+    },
+    {
+        id: 6,
+        images: [
+          "/images/Terrace-1-bed-bedroom.jpg",
+          "/images/Terrace-1-bedroom-bath.jpg",
+          "/images/terrace-one-bedroom-living.jpg"
+        ],
+        title: "TERRACE ONE BEDROOM",
+        subTitle: "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE",
+        buttom: "BOOK IT",
+              text: [
+        "TAKE IN LAS VEGAS FROM AN EXPANSIVE PRIVATE TERRACE.",
+        "TERRACE STUDIO TWO QUEEN BEDS FEATURES.",
+        "The Two Queen Beds Terrace Studio features warm, welcoming touches and a luxurious bathroom with an exquisite marble floor. Glass doors open onto an expansive private terrace with unparalleled views of The Strip and surrounding areas – a feature not typically found in a luxury Vegas hotel room - to make this one of the best beds in Las Vegas.",
+        "Comfortable, open living space",
+        "Large, luxurious bathroom, 620 sq. ft. studio, 110 sq. ft.",
+        "private terrace",
+        "2 queen-size beds",
+        "Room features pictured may vary based on availability."
+      ],
+      mapImage: "/images/twoQueens-map.jpg"
     }
-]
+  ];
 
 export default roomsData 
 
