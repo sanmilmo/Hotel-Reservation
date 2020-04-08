@@ -40,3 +40,35 @@ code {
   background-color: #2E2E2E !important;
   color: white;
 }
+
+.icons-bu {
+  text-align: space-between;
+  display: inline-flex;
+}
+
+.align-self-end {
+  margin-top: auto;
+}
+
+.booking-body {
+  background-color: white;
+}
+
+.table-booking {
+  color: black !important;
+  width: 80% !important;
+  margin: auto !important;
+}
+
+.form-booking {
+  margin: auto !important;
+  width: 20% !important;
+}
+
+.guest-title {
+  text-align: center;
+}
+
+.calendar1 {
+  text-align: center !important;
+}

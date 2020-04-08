@@ -2,12 +2,12 @@ import React from 'react';
 import roomsData from '../data/roomsData';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
-import Home from './Home';
-import { BrowserRouter, Route } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
+// import DayPicker from "react-day-picker";
+// import "react-day-picker/lib/style.css";
 
 export default class Rooms extends React.Component {
 
@@ -22,7 +22,7 @@ export default class Rooms extends React.Component {
               <Carousel.Caption>
                 <h3>{roomsData[this.props.match.params.room-1].title}</h3>
                 <p>{roomsData[this.props.match.params.room-1].subTitle}</p>
-                <Button variant="info">BOOK IT</Button>
+                <Button variant="info" Link href={"/booking/:from/:to"}>BOOK IT</Button>
               </Carousel.Caption>
             </Carousel.Item>
           ))}

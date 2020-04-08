@@ -8,14 +8,15 @@ export default function SingleCard(props) {
     return ( 
         <Card>
           <Card.Img variant="top" src={props.image} alt="room-images"/>
-          <Card.Body>
+          <Card.Body className={"d-flex flex-column"}>
               <Card.Title>{props.title}</Card.Title>
               <Card.Text>{props.text}</Card.Text>
-              <Button variant="primary" Link href={"/rooms/"+ props.id}>More Details</Button>
+              <Button className={"align-self-end"} variant="primary" Link href={"/rooms/"+ props.id}>More Details</Button>
           </Card.Body>
         </Card>
     )
 }
+
 
 
 
