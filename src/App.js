@@ -9,9 +9,6 @@ import Payment from './components/Payment';
 import EventsPage from './components/EventsPage';
 import FoodPage from './components/FoodPage';
 
-
-
-
 function App() {
   return (
     <>

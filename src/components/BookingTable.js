@@ -7,72 +7,43 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-  },
-});
+import {useSelector} from 'react-redux'
 
 
-
-
-
-export default class BookingTable extends React.Component {
-//   const classes = useStyles();
-
-  constructor(props) {
-    super(props);
-    this.handleDayClick = this.handleDayClick.bind(this);
-    this.handleResetClick = this.handleResetClick.bind(this);
-    this.state = this.getInitialState();
-  }
-
-  getInitialState() {
-    return {
-      rows:[]
-    };
-  }
-
-  createData(name, calories, fat, carbs, protein) {
-      return { name, calories, fat, carbs, protein };
-  }
-
-  render () {
-    rows = this.state.rows;
+export default function BookingTable() {
+  const rooms = useSelector(state =>state.rooms)
     return (
+        
         <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="Booking Table">
+        <Table aria-label="Booking Table">
             <TableHead>
             <TableRow>
                 <TableCell>#</TableCell>
                 <TableCell align="right">Room</TableCell>
-                <TableCell align="right">From</TableCell>
-                <TableCell align="right">To</TableCell>
                 <TableCell align="right">Adults</TableCell>
                 <TableCell align="right">Children</TableCell>
+                <TableCell align="right">From</TableCell>
+                <TableCell align="right">To</TableCell>
             </TableRow>
             </TableHead>
             <TableBody>
             {
-            rows.length > 0 (
-            rows.map((row) => (
-                <TableRow key={row.name}>
-                <TableCell component="th" scope="row">
-                    {row.name}
-                </TableCell>
-                <TableCell align="right">{row.calories}</TableCell>
-                <TableCell align="right">{row.fat}</TableCell>
-                <TableCell align="right">{row.carbs}</TableCell>
-                <TableCell align="right">{row.protein}</TableCell>
+            rooms !== undefined &&
+            rooms.length > 0 &&
+            rooms.map((row) => (
+                <TableRow key={row.number}>
+                  <TableCell component="th" scope="row">{row.number}</TableCell>
+                  <TableCell align="right">{row.room}</TableCell>
+                  <TableCell align="right">{row.adults}</TableCell>
+                  <TableCell align="right">{row.children}</TableCell>
+                  <TableCell align="right">{row.from}</TableCell>
+                  <TableCell align="right">{row.to}</TableCell>
                 </TableRow>
             ))
-             )
             }
             </TableBody>
         </Table>
         </TableContainer>
     );
-    }
 
 }
