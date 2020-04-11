@@ -22,7 +22,7 @@ export default class Rooms extends React.Component {
               <Carousel.Caption>
                 <h3>{roomsData[this.props.match.params.room-1].title}</h3>
                 <p>{roomsData[this.props.match.params.room-1].subTitle}</p>
-                <Button variant="info" Link href={"/booking/:from/:to"}>BOOK IT</Button>
+                <Button variant="info" Link href={"/booking/"+roomsData[this.props.match.params.room-1].title}>BOOK IT</Button>
               </Carousel.Caption>
             </Carousel.Item>
           ))}

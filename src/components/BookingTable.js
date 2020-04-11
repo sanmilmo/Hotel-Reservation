@@ -36,8 +36,8 @@ export default function BookingTable() {
                   <TableCell align="right">{row.room}</TableCell>
                   <TableCell align="right">{row.adults}</TableCell>
                   <TableCell align="right">{row.children}</TableCell>
-                  <TableCell align="right">{row.from}</TableCell>
-                  <TableCell align="right">{row.to}</TableCell>
+                  <TableCell align="right">{row.from.toDateString()}</TableCell>
+                  <TableCell align="right">{row.to.toDateString()}</TableCell>
                 </TableRow>
             ))
             }

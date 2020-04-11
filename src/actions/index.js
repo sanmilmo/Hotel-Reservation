@@ -38,3 +38,9 @@ export const add_room = (room) => {
         payload: room
     }
 }
+
+export const reset_people = () => {
+    return {
+        type: 'RESET_PEOPLE'
+    }
+}

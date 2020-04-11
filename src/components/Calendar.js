@@ -56,10 +56,8 @@ export default function Calendar(props) {
           `}
           </style>
         </Helmet>
-        {from &&
-            to &&
-        (<Button variant="info" href={`/booking/${from.toISOString()}/${to.toISOString()}`}>BOOK IT</Button>)
-  }
+
+  
       </div>
     );
 }

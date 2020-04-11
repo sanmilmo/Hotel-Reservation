@@ -6,6 +6,8 @@ const peopleReducer = (state = {"adults": 1, "children": 0}, action) => {
         case 'CHILDREN':
             state.children = action.payload;
             return state;
+        case 'RESET_PEOPLE':
+            return {"adults": 1, "children": 0};
     default:
         return state;
     }

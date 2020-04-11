@@ -6,7 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import BookingTable from './BookingTable';
 import { useSelector, useDispatch } from 'react-redux';
-import { adult, children, reset_calendar, reset_table, add_room } from './../actions';
+import { Link } from 'react-router-dom';
+import { adult, children, reset_calendar, reset_table, add_room, reset_people } from './../actions';
 
 
 export default function Booking(props) {
@@ -14,21 +15,21 @@ export default function Booking(props) {
     const { from, to } = useSelector(state => state.calendar)
     const { adults, children } = useSelector(state => state.people)
     const rooms = useSelector(state =>state.rooms)
-    console.log(rooms)
 
-    let fromDate = new Date(props.match.params.from);
-    let toDate = new Date(props.match.params.to);
+    let roomTitle = props.match.params.roomTitle;
 
     function handleAddRoom() {
         let data = {
-            "number": Math.random(),
-            "room": "Del medio",
+            "number": Math.floor(Math.random()*100),
+            "room": roomTitle,
             "adults": adults,
             "children": children,
             "from": from,
             "to": to
         };
         dispatch(add_room(data));
+        dispatch(reset_calendar());
+        dispatch(reset_people());
     }
 
     return (
@@ -54,7 +55,7 @@ export default function Booking(props) {
         <Row>
             <BookingTable />
         </Row>
-        <Button style={{ margin: '30px auto', maxWidth: '300px', display: 'block '}}variant="info" Link href={"/payment"}>CONFIRM DATES OF STAY</Button>
+        <Link to={{ pathname:'/payment'}}><Button style={{ margin: '30px auto', maxWidth: '300px', display: 'block '}} variant="info">CONFIRM DATES OF STAY</Button></Link>
         </div>
     )
 }
