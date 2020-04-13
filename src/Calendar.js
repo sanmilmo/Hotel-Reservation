@@ -4,7 +4,7 @@ import DayPicker, { DateUtils } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import Button from 'react-bootstrap/Button';
 import { useSelector, useDispatch } from 'react-redux'
-import { add_date, reset_calendar } from './../actions';
+import { add_date, reset_calendar } from './actions';
 
 
 export default function Calendar(props) {

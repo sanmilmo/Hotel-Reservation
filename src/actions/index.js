@@ -44,3 +44,16 @@ export const reset_people = () => {
         type: 'RESET_PEOPLE'
     }
 }
+
+export const sign_out = () => {
+    return {
+        type: 'SIGN_OUT'
+    }
+}
+
+export const sign_in = (username) => {
+    return {
+        type: 'SIGN_IN', 
+        payload: username
+    }
+}

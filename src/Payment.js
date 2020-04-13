@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import BookingTable from './BookingTable';
 import { useSelector, useDispatch } from 'react-redux';
-import { add_room } from './../actions';
+import { add_room } from './actions';
 
 
 export default function Payment() {
@@ -31,3 +31,5 @@ export default function Payment() {
         </div>
     )
 }
+
+

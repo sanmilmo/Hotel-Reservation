@@ -8,6 +8,8 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import {createStore} from 'redux'
 import allReducers from './reducers'
 import {Provider} from 'react-redux'
+import reloadMagic from './reload-magic-client.js' 
+reloadMagic()
 
 const store = createStore(
     allReducers,

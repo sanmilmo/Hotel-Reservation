@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import { useSelector, useDispatch } from 'react-redux'
-import { adult, children } from './../actions';
+import { adult, children } from './actions';
 
 export default function BookingForm() {
     const dispatch = useDispatch();

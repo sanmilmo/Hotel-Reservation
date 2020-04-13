@@ -1,8 +1,8 @@
 import React from 'react'
 // import { Link } from 'react-dom';
-import Jumbo from '../components/Jumbo';
-import CardRooms from "../components/CardRooms";
-import Footer from '../components/Footer';
+import Jumbo from './Jumbo';
+import CardRooms from "./CardRooms";
+import Footer from './Footer';
 
 
 

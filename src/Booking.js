@@ -7,14 +7,14 @@ import Col from 'react-bootstrap/Col';
 import BookingTable from './BookingTable';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { adult, children, reset_calendar, reset_table, add_room, reset_people } from './../actions';
+import { adult, children, reset_calendar, reset_table, add_room, reset_people } from './actions';
 
 
 export default function Booking(props) {
     const dispatch = useDispatch();
     const { from, to } = useSelector(state => state.calendar)
     const { adults, children } = useSelector(state => state.people)
-    const rooms = useSelector(state =>state.rooms)
+    const rooms = useSelector(state => state.rooms)
 
     let roomTitle = props.match.params.roomTitle;
 
