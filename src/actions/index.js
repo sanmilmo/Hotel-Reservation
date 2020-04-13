@@ -38,3 +38,22 @@ export const add_room = (room) => {
         payload: room
     }
 }
+
+export const reset_people = () => {
+    return {
+        type: 'RESET_PEOPLE'
+    }
+}
+
+export const sign_out = () => {
+    return {
+        type: 'SIGN_OUT'
+    }
+}
+
+export const sign_in = (username) => {
+    return {
+        type: 'SIGN_IN', 
+        payload: username
+    }
+}

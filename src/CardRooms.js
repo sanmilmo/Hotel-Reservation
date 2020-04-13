@@ -1,6 +1,6 @@
 import React from 'react';
 import SingleCard from './SingleCard';
-import cardData from '../data/cardData.js';
+import cardData from './data/cardData.js';
 import CardDeck from 'react-bootstrap/CardDeck';
 
 export default function CardRooms() {

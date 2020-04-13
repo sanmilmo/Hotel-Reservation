@@ -4,7 +4,7 @@ import DayPicker, { DateUtils } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import Button from 'react-bootstrap/Button';
 import { useSelector, useDispatch } from 'react-redux'
-import { add_date, reset_calendar } from './../actions';
+import { add_date, reset_calendar } from './actions';
 
 
 export default function Calendar(props) {
@@ -56,10 +56,8 @@ export default function Calendar(props) {
           `}
           </style>
         </Helmet>
-        {from &&
-            to &&
-        (<Button variant="info" href={`/booking/${from.toISOString()}/${to.toISOString()}`}>BOOK IT</Button>)
-  }
+
+  
       </div>
     );
 }

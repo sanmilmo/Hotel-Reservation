@@ -1,11 +1,9 @@
 const roomsReducer = (state = [], action) => {
     switch (action.type) {
         case 'ADD_ROOM':
-            let rows = state
-            rows.push(action.payload)
-            return rows;
+            return state.concat(action.payload);
         case 'RESET_TABLE':
-            return {};
+            return [];
         default:
             return state
     }
