@@ -89,6 +89,7 @@ export default function Events(props) {
             <Typography paragraph>{props.details}</Typography>
             <Typography paragraph>{props.explanation}</Typography>
             <Button variant="contained" color="secondary" Link href={"https://www1.ticketmaster.com/event/17005866A39D6554?_ga=2.254172235.271872520.1586142685-138830415.1583805810"}>BUY TICKETS</Button>
+            {/* target="_blank" */}
           </CardContent>
         </Collapse>
       </Card>

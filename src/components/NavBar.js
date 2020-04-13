@@ -14,7 +14,7 @@ export default function NavBar() {
             <NavDropdown title="Services" id="collasible-nav-dropdown">
                 <NavDropdown.Item href={"/events"}>Events</NavDropdown.Item>
                 <NavDropdown.Item href={"/food"}>Food and Drink</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Casino</NavDropdown.Item>
+                <NavDropdown.Item href={"/casino"}>Casino</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Spa & Salon</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Offers</NavDropdown.Item>

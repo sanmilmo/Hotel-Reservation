@@ -8,6 +8,7 @@ import LoginPage from './components/LoginPage';
 import Payment from './components/Payment';
 import EventsPage from './components/EventsPage';
 import FoodPage from './components/FoodPage';
+import Casino from './components/Casino';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
        <Route path="/booking/:from/:to" name="booking" component={Booking} />
        <Route path="/events" name="events" component={EventsPage} />
        <Route path="/food" name="food" component={FoodPage} />
+       <Route path="/casino" name="casino" component={Casino} />
        <Route path="/login" name="login" component={LoginPage} />
        <Route path="/payment" name="payment" component={Payment} />
     </Switch>

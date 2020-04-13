@@ -7,7 +7,6 @@ import CarouselItem from './CarouselItem';
 
 export default function CarouselItem(props) {
 return props.images.map(image => {
-    // console.log(image)
     return (
         <Carousel.Item>
             <img
