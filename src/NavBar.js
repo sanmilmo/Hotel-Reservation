@@ -36,7 +36,7 @@ export default function NavBar(props) {
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Services" id="collasible-nav-dropdown">
                 <Link to="/events"><NavDropdown.Item href="/events">Events</NavDropdown.Item></Link>
-                <Link to="/food"><NavDropdown.Item>Food and Drink</NavDropdown.Item></Link>
+                <Link to="/food"><NavDropdown.Item href="/food">Food and Drink</NavDropdown.Item></Link>
                 <Link to="/events"><NavDropdown.Item>Casino</NavDropdown.Item></Link>
                 <Link to="/events"><NavDropdown.Item>Spa & Salon</NavDropdown.Item></Link>
                 <NavDropdown.Divider />

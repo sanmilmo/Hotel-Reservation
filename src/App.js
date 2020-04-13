@@ -3,12 +3,12 @@ import Home from './Home'
 import NavBar from './NavBar';
 import Rooms from './Rooms';
 import { Switch, Route } from "react-router-dom";
-import Booking from './components/Booking';
-import LoginPage from './components/LoginPage';
-import Payment from './components/Payment';
-import EventsPage from './components/EventsPage';
-import FoodPage from './components/FoodPage';
-import Casino from './components/Casino';
+import Booking from './Booking';
+import Login from './Login';
+import Payment from './Payment';
+import EventsPage from './EventsPage';
+import FoodPage from './FoodPage';
+import Casino from './Casino';
 import { useSelector } from 'react-redux';
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
        <Route path="/events" name="events" component={EventsPage} />
        <Route path="/food" name="food" component={FoodPage} />
        <Route path="/casino" name="casino" component={Casino} />
-       <Route path="/login" name="login" component={LoginPage} />
+       <Route path="/login" name="login" component={Login} />
        <Route path="/payment" name="payment" component={Payment} />
     </Switch>
     </>
