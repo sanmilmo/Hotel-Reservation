@@ -17,11 +17,13 @@ export default function Booking(props) {
     const rooms = useSelector(state => state.rooms)
 
     let roomTitle = props.match.params.roomTitle;
+    let roomPrice = props.match.params.roomPrice;
 
     function handleAddRoom() {
         let data = {
             "number": Math.floor(Math.random()*100),
             "room": roomTitle,
+            "price": roomPrice,
             "adults": adults,
             "children": children,
             "from": from,
@@ -55,7 +57,7 @@ export default function Booking(props) {
         <Row>
             <BookingTable />
         </Row>
-        <Link to={{ pathname:'/payment'}}><Button style={{ margin: '30px auto', maxWidth: '300px', display: 'block '}} variant="info">CONFIRM DATES OF STAY</Button></Link>
+        <Link to={{ pathname:'/reservation'}}><Button style={{ margin: '30px auto', maxWidth: '300px', display: 'block '}} variant="info">BOOK</Button></Link>
         </div>
     )
 }

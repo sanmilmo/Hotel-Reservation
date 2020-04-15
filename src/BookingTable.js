@@ -10,11 +10,10 @@ import Paper from '@material-ui/core/Paper';
 import {useSelector} from 'react-redux'
 
 
-export default function BookingTable() {
+export default function BookingTable(props) {
   const rooms = useSelector(state =>state.rooms)
     return (
-        
-        <TableContainer component={Paper}>
+        <TableContainer component={Paper} className="table-booking">
         <Table aria-label="Booking Table">
             <TableHead>
             <TableRow>
@@ -24,6 +23,7 @@ export default function BookingTable() {
                 <TableCell align="right">Children</TableCell>
                 <TableCell align="right">From</TableCell>
                 <TableCell align="right">To</TableCell>
+                <TableCell align="right">Price</TableCell>
             </TableRow>
             </TableHead>
             <TableBody>
@@ -38,6 +38,7 @@ export default function BookingTable() {
                   <TableCell align="right">{row.children}</TableCell>
                   <TableCell align="right">{row.from.toDateString()}</TableCell>
                   <TableCell align="right">{row.to.toDateString()}</TableCell>
+                  <TableCell align="right">CAD${row.price}</TableCell>
                 </TableRow>
             ))
             }

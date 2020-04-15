@@ -22,7 +22,6 @@ export default function Food(props) {
 
   return (
       <>
-      
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -30,7 +29,7 @@ export default function Food(props) {
           image={props.image}
           title="Contemplative Reptile"
         />
-        <CardContent>
+        <CardContent style={{minHeight: "200px"}}>
           <Typography gutterBottom variant="h5" component="h2">
             {props.name}
           </Typography>
@@ -40,7 +39,7 @@ export default function Food(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="secondary" variant="outlined" Link href={"https://www.opentable.com/restref/client/?rid=213331&restref=213331&corrid=99c8037c-c083-4bb5-9bd1-f380e1b90a3e"}>
+        <Button size="small" color="secondary" variant="outlined" target="_blank" Link href={"https://www.opentable.com/restref/client/?rid=213331&restref=213331&corrid=99c8037c-c083-4bb5-9bd1-f380e1b90a3e"}>
           RESERVE
         </Button>
       </CardActions>

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black !important;
+  background-color: #091B2C !important;
 }
 
 code {
@@ -55,9 +55,8 @@ code {
 }
 
 .table-booking {
-  color: black !important;
   width: 80% !important;
-  margin: auto !important;
+  margin: 0 auto !important;
 }
 
 .form-booking {

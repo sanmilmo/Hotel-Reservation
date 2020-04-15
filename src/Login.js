@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { sign_in } from './actions';
+import Auth from './Auth';
 
 export default function Login(props) {
   const dispatch = useDispatch();
@@ -29,11 +30,10 @@ export default function Login(props) {
   
     return (
       <>
-      <form onSubmit={submitHandler}>
-        Username
-        <input type="text" onChange={(e) => setUserName(e.target.value)}/> Password{' '}
-        <input type="password" onChange={(e) => setPasswordInput(e.target.value)}/>
-        <input type="submit" value="login" />
+      <form onSubmit={submitHandler} style={{color: "white", padding: "0 20px"}}>
+        <input placeholder="Username" type="text" onChange={(e) => setUserName(e.target.value)}/> {' '}
+        <input placeholder="Password" type="password"  onChange={(e) => setPasswordInput(e.target.value)}/>
+        <input style={{margin: "10px"}} type="submit" value="Login" />
       </form>
       </>
     );

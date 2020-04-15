@@ -8,16 +8,18 @@ import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import { useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
-// import DayPicker from "react-day-picker";
-// import "react-day-picker/lib/style.css";
+import {
+  MDBRow,
+  MDBCol,
+  MDBContainer
+} from "mdbreact";
+
 
 export default function Rooms(props) {
   const isLogged = useSelector(state => state.isLogged)
-
-
     console.log(props)
     return (
-      <>
+      <div style={{color: "white"}}>
         <Carousel>
           {roomsData[props.match.params.room-1].images.map(image => (
             <Carousel.Item key={roomsData[props.match.params.room-1].id}>
@@ -25,33 +27,37 @@ export default function Rooms(props) {
               <Carousel.Caption>
                 <h3>{roomsData[props.match.params.room-1].title}</h3>
                 <p>{roomsData[props.match.params.room-1].subTitle}</p>
-                <Button variant="info" Link href={"/booking/"+roomsData[props.match.params.room-1].title}>BOOK IT</Button>
+                <h4>Starting from CAD${roomsData[props.match.params.room-1].price}</h4>
+                <Link to={"/booking/"+roomsData[props.match.params.room-1].title+"/"+roomsData[props.match.params.room-1].price}><Button variant="info" Link href={"/booking/"+roomsData[props.match.params.room-1].title+"/"+roomsData[props.match.params.room-1].price}>BOOK IT</Button></Link>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>
-        <Container className='info-room'>
-            <Row>
-                <Col sm={8}>{roomsData[props.match.params.room-1].text[0]}</Col>
-                <Col sm={4}>{roomsData[props.match.params.room-1].text[1]}</Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col sm={8}>{roomsData[props.match.params.room-1].text[2]}</Col>
-                <Col sm={4}>
-                    <Row>{roomsData[props.match.params.room-1].text[3]}</Row>
-                    <Row>{roomsData[props.match.params.room-1].text[4]}</Row>
-                    <Row>{roomsData[props.match.params.room-1].text[5]}</Row>
-                    <Row>{roomsData[props.match.params.room-1].text[6]}</Row>
-                    </Col>
-            </Row>
-            <br></br>
-            <Row>
-                <Col sm={8}>{roomsData[props.match.params.room-1].text[7]}</Col>
-            </Row>
-        </Container>
-        <Image src={roomsData[props.match.params.room-1].mapImage} fluid />
-      </>
+        <MDBContainer style={{marginTop: "50px", color: "white"}}>
+        <MDBRow>
+          <MDBCol md="8">
+            {roomsData[props.match.params.room-1].text[0]}
+          </MDBCol>
+          <MDBCol md="4" >
+            {roomsData[props.match.params.room-1].text[1]}
+          </MDBCol>
+        </MDBRow>
+        <hr></hr>
+        <MDBRow>
+          <MDBCol md="8">
+              {roomsData[props.match.params.room-1].text[2]}  
+          </MDBCol>
+          <MDBCol md="4" >
+              <MDBRow>{roomsData[props.match.params.room-1].text[3]}</MDBRow>
+              <MDBRow>{roomsData[props.match.params.room-1].text[4]}</MDBRow>
+              <MDBRow>{roomsData[props.match.params.room-1].text[5]}</MDBRow>
+              <MDBRow>{roomsData[props.match.params.room-1].text[6]}</MDBRow>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+      <h4 style={{margin: "30px auto", textAlign: "center"}}>{roomsData[props.match.params.room-1].text[7]}</h4>  
+      <img src={roomsData[props.match.params.room-1].mapImage} className="img-fluid z-depth-1" alt=""/>
+      </div>
     );
 }
 

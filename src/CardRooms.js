@@ -7,7 +7,7 @@ export default function CardRooms() {
     const CardRows = cardData.map(RowData => {
         const CardRowsData = RowData.map(SingleCardData => {
             return (
-            <SingleCard key={"CardRooms_"+SingleCardData.id} id={SingleCardData.id} image={SingleCardData.image} title={SingleCardData.title} text={SingleCardData.text} />
+            <SingleCard key={"CardRooms_"+SingleCardData.id} id={SingleCardData.id} image={SingleCardData.image} title={SingleCardData.title} text={SingleCardData.text}/>
             );
         });
         return ( 

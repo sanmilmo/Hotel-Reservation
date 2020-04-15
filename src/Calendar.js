@@ -56,8 +56,6 @@ export default function Calendar(props) {
           `}
           </style>
         </Helmet>
-
-  
       </div>
     );
 }

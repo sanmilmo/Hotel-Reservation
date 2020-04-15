@@ -10,7 +10,8 @@ export const BookingProvider = props => {
             adults: 0,
             children: 0
             },
-            rooms:[]
+            rooms:[],
+            price: ""
     })
 
     return (
