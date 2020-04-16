@@ -24,9 +24,26 @@ export default function Payment() {
                             <input type="checkbox" class="custom-control-input" id="defaultUnchecked"/>
                             <label class="custom-control-label" for="defaultUnchecked">Use the same address as contact information.</label>
                     </div>
-                </div>
-                <p>Prices in CAD shown are for informational purposes only. Deposits and total charges will be charged in USD.</p>
-                <h1><FaCcVisa/> <FaCcMastercard/> <FaCcDinersClub/> <FaCcPaypal/></h1>
+                    </div >
+                    <p>Prices in CAD shown are for informational purposes only. Deposits and total charges will be charged in USD.</p>
+                
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="defaultInline1"></input>
+                    <label class="custom-control-label" for="defaultInline1"><h1><FaCcVisa/></h1></label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="defaultInline2"></input>
+                    <label class="custom-control-label" for="defaultInline2"><h1><FaCcMastercard/></h1></label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="defaultInline3"></input>
+                    <label class="custom-control-label" for="defaultInline3"><h1><FaCcDinersClub/></h1></label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="defaultInline3"></input>
+                    <label class="custom-control-label" for="defaultInline3"><h1><FaCcPaypal/></h1></label>
+                    </div>
+                
                 </MDBCol>
             </MDBRow>
         </MDBContainer>

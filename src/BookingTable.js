@@ -23,7 +23,7 @@ export default function BookingTable(props) {
                 <TableCell align="right">Children</TableCell>
                 <TableCell align="right">From</TableCell>
                 <TableCell align="right">To</TableCell>
-                <TableCell align="right">Price</TableCell>
+                <TableCell align="right">Price per Night</TableCell>
             </TableRow>
             </TableHead>
             <TableBody>
