@@ -9,13 +9,7 @@ export default function CarouselItem(props) {
 return props.images.map(image => {
     return (
         <Carousel.Item>
-            <img
-                key={props.id}
-                 className="d-block w-100"
-                 src={image}
-                 alt="First slide"
-             />
-       
+            <img key={props.id} className="d-block w-100" src={image} alt="First slide"/>
             <Carousel.Caption>
                 <h3>props.title</h3>
                 <p>props.subTitle</p>

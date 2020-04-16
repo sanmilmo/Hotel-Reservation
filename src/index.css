@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #091B2C !important;
+  background-color: black !important;
 }
 
 code {
@@ -41,18 +41,20 @@ code {
   color: white;
 }
 
-.icons-bu {
-  text-align: space-between;
-  display: inline-flex;
-}
+div.purchase {
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+div.purchase h1 {
+  margin: 0 }
 
 .align-self-end {
   margin-top: auto;
 }
 
-.booking-body {
-  background-color: white;
-}
 
 .table-booking {
   width: 80% !important;
@@ -70,4 +72,13 @@ code {
 
 .calendar1 {
   text-align: center !important;
+}
+/* mobile */
+@media (max-width: 767px) {
+  .jumbo-img{
+    height: 400px;
+  }
+  .home-rooms{
+    font-size: 20px;
+  }
 }

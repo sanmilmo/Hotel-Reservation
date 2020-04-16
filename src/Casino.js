@@ -8,14 +8,14 @@ export default function Casino() {
   return (
     
     <div>
-      <h1 
+      <h6 
         style={{
           margin: "15px auto", 
           fontSize: "4rem", 
           textAlign: "center", 
-          color: "white"}}>
+          color: "#ce5a57"}}>
             CASINO OVERVIEW
-      </h1>
+      </h6>
       <h5 style={{
           margin: "0 auto", 
           textAlign: "center", 

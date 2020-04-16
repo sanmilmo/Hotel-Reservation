@@ -11,7 +11,7 @@ export default function SingleCard(props) {
           <Card.Body className={"d-flex flex-column"}>
               <Card.Title>{props.title}</Card.Title>
               <Card.Text>{props.text}</Card.Text>
-              <Link to={"/rooms/"+ props.id}><Button className={"align-self-end"} variant="primary" Link href={"/rooms/"+ props.id}>More Details</Button></Link>
+              <Link to={"/rooms/"+ props.id}><Button  style={{position: 'absolute', bottom: '0', right: '0'}} variant="primary" Link href={"/rooms/"+ props.id}>More Details</Button></Link>
           </Card.Body>
         </Card>
     )

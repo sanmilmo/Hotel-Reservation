@@ -7,7 +7,7 @@ export default function Spa() {
             <h5 style={{
           margin: "15px auto", 
           fontSize: "4rem", 
-          textAlign: "center"}}>SAHRA SPA, SALON & HAMMAM</h5>
+          textAlign: "center", color: '#ce5a57'}}>SAHRA SPA, SALON & HAMMAM</h5>
           <p style={{
           margin: "0 auto", 
           textAlign: "center",

@@ -28,7 +28,6 @@ export default function CasinoContent() {
           <MDBCol md="6">
             <img src="./images/casinoTwo.jpg" className="img-fluid z-depth-1" alt="casinoMachine"/>
           </MDBCol>
-
           <MDBCol md="6" >
                 <h4>JIN JI BAO XI – ENDLESS TREASURES</h4>
                 <p>"The #1 game series in Asia, Jin Ji Bao Xi™, is back and introducing the sensational game, 

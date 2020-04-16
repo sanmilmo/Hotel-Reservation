@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import {
-  MDBRow,
-  MDBCol,
-  MDBContainer
-} from "mdbreact";
+import {MDBRow, MDBCol, MDBContainer} from "mdbreact";
 
 class SpaGrid extends Component {
   render() {

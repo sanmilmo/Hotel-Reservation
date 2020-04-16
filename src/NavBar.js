@@ -7,26 +7,17 @@ import EventsPage from './EventsPage';
 import Events from './Events';
 import { useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
+import { FaHotel } from 'react-icons/fa';
 import Auth from "./Auth"
 
 
 export default function NavBar(props) {
-    
-    // const isLogged = useSelector(state => state.isLogged)    
-    // const [username, setUsernameState] = useState("");
-    // const logoHotel = "images/logoHotel.png"
-
     function setUsername(username) {
         props.setUsername(username)
         // setUsernameState(username)
     }
 
     function Greeting(props) {
-
-        // if (props.username !== "") {
-        //     return  <h4 style={{color: "white"}}>Welcome {props.username}!</h4>;
-        // }
-        // return <Login setUsername={setUsername}/>;
          if (props.username !== "") {
             return  <h4 style={{color: "white"}}>Welcome {props.username}!</h4>;
         }
@@ -36,7 +27,7 @@ export default function NavBar(props) {
     return (
 
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/">SANMO HOTEL</Navbar.Brand>
+        <Link to="/"><Navbar.Brand href="/"> Sanmo Hotel < FaHotel/></Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
@@ -46,8 +37,6 @@ export default function NavBar(props) {
                 <Link to="/food"><NavDropdown.Item href="/food">Food and Drink</NavDropdown.Item></Link>
                 <Link to="/casino"><NavDropdown.Item href="/casino">Casino</NavDropdown.Item></Link>
                 <Link to="/spa"><NavDropdown.Item href="/spa">Spa & Salon</NavDropdown.Item></Link>
-                <NavDropdown.Divider />
-                <Link to="/events"><NavDropdown.Item href="#action/3.4">Offers</NavDropdown.Item></Link>
             </NavDropdown>
             </Nav>
             <Nav>

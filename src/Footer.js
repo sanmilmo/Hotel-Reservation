@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import { FaFacebookSquare, FaInstagram, FaTwitter, FaSnapchatGhost,  } from 'react-icons/fa';
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaSnapchatGhost, FaHotel } from 'react-icons/fa';
 
 
 const FooterPage = () => {
@@ -9,7 +9,8 @@ const FooterPage = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="4">
-            <h5 className="title">THE SANMO OF LAS VEGAS HOTEL</h5>
+            
+            <h5>SANMO Hotel < FaHotel/></h5>
             <p>3708 Las Vegas Boulevard South</p>
             <p>Las Vegas, NV  89109</p>
           </MDBCol>
@@ -19,14 +20,7 @@ const FooterPage = () => {
           </MDBCol>
           <MDBCol md="5" >
             <h5 className="title">CONNECT WITH US</h5>
-            <div className="icons-bu">
-              <ul style={{listStyle: "none", display: "flex", flexWrap: "wrap"}}>
-                <li><a href="http://twitter.com" target="_blank"  alt="Twitter Logo"><FaTwitter /></a></li>
-                <li><a href="http://facebook.com" target="_blank" alt="Facebook Logo"><FaFacebookSquare /></a></li>
-                <li><a href="http://instagram.com" target="_blank" alt="Instagram Logo"><FaInstagram /></a></li>
-                <li><a href="http://snapchat.com" target="_blank" alt="Snapchat Logo"><FaSnapchatGhost /></a></li>
-              </ul>
-            </div>
+            <h4><FaTwitter/> <FaFacebookSquare/> <FaInstagram/> <FaSnapchatGhost/></h4>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
