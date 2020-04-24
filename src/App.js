@@ -11,7 +11,6 @@ import FoodPage from './FoodPage';
 import Casino from './Casino';
 import PurchaseDone from './PurchaseDone'
 import Spa from './Spa';
-import { useSelector } from 'react-redux';
 import Payment from './Payment';
 
 function App() {

@@ -10,7 +10,7 @@ export default class FoodPage extends React.Component {
         return (
             <div>
                 <div>
-                    <h1 style={{color: '#ce5a57', margin: '40px auto', textAlign: 'center'}}>RESTAURANT COLLECTION</h1>
+                    <h1 style={{color: '#ce5a57', margin: '40px auto', textAlign: 'center'}}>Restaurant Collection</h1>
                     <h5 style={{color: 'white', margin: '40px auto', textAlign: 'center'}}>"Dining is reinvented at SANMO hotel with a one-of-a-kind restaurant collection featuring world-class</h5>
                     <h5 style={{color: 'white', margin: '40px auto', textAlign: 'center'}}>lavors and aufthentic dining options by famed restaurateurs.</h5>
                 </div>

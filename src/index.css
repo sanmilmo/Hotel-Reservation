@@ -81,4 +81,11 @@ div.purchase h1 {
   .home-rooms{
     font-size: 20px;
   }
+  .casino-overview{
+    font-size: 20px;
+  }
+  .table-booking {
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
 }
