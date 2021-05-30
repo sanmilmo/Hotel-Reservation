@@ -37,7 +37,7 @@
     "sha1": "^1.1.1",
     "shelljs": "^0.8.3",
     "webpack-inject-plugin": "^1.5.0",
-    "ws": "^7.0.0"
+    "ws": "^7.4.6"
   },
   "main": "index.js",
   "scripts": {
